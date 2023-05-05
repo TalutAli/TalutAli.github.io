@@ -1,3 +1,6 @@
 ﻿#container{background-color: #000000;}
-#header{ background-color:#210B32}
+#header{ 
+    background-color:#210B32;
+    color: white;
+}
 
