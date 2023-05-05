@@ -17,13 +17,14 @@
 }
 
 #nav{
+    text-align: center;
     .nav li{
         display: inline;
-        padding-left: 50;
+        padding-left: 100px;
     }
 
     .nav{
-        padding-left:50px;
+        padding-left:100px;
     }
 }
 
