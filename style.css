@@ -1,4 +1,10 @@
-﻿#container{background-color: #000000;}
+﻿body {background-color: #000000;}
+#container{
+    background-color: #9342D1;
+    width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
 #header{ 
     background-color:#210B32;
     color: white;
