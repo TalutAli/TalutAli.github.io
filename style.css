@@ -1,12 +1,33 @@
-﻿body {background-color: white;}
+﻿body {
+    background-color: white;
+    font: outfit;
+}
+
 #container{
     background-color: #9342D1;
     width: 1200px;
     margin-left:auto;
     margin-right:auto;
 }
+
 #header{ 
     background-color:#210B32;
     color: white;
+    text-align: center;
+}
+
+#nav{
+    .nav li{
+        display: inline;
+        padding-left: 50;
+    }
+
+    .nav{
+        padding-left:50px;
+    }
+}
+
+#content{
+    padding: 10px;
 }
 
