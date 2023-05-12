@@ -5,7 +5,7 @@
 
 #container{
     background-color: #9342D1;
-    width: 1200px;
+    width: 1800px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -18,13 +18,25 @@
 
 #nav{
     text-align: center;
+    list-style: none; position: relative; float: left; display: block; left: 50%;
     .nav li{
+        position: relative; float: left; display: block; right: 50%;
         display: inline;
-        padding-left: 100px;
+        padding-left: 10px;
     }
 }
+
+#nav{ width: 100%;
+    overflow: hidden;}
+
 
 #content{
     padding: 10px;
 }
 
+#footer{
+    background-color:#210B32;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
