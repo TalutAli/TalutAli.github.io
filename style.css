@@ -26,6 +26,7 @@
     background-color: #320F4D;
     height: 90vh;
     width: 70vw;
+    min-width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
