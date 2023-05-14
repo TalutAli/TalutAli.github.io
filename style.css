@@ -41,42 +41,6 @@ body {
     margin: auto;
     }
 
-#nav .selected{
-        font-weight: bold;
-}
-
-.a{
-    position: relative;
-    text-decoration: none;
-    color: #a0a0a0;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    padding: 0px 10px;
-    transition: all 0.3s;
-}
-
-.a::after{
-    content: '';
-    display: block;
-    background: #9342D1;
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-    opacity: 0;
-    transition: all 0.3s;
-    pointer-events: none;
-}
-
-.a:hover{
-    color: #ffffff;
-}
-
-.a:hover::after{
-   opacity: 1;
-
-}
-
 #nav.selected{
     font-weight: bold;
 }
@@ -120,3 +84,32 @@ h2{
     padding: 10px;
 }
 
+.a{
+position: relative;
+text-decoration: none;
+color: #a0a0a0;
+font-size: 20px;
+letter-spacing: 0.5px;
+padding: 0px 10px;
+transition: all 0.3s;
+}
+
+.a::after{
+content: '';
+display: block;
+background: #9342D1;
+height: 3px;
+width: 100%;
+left: 0;
+bottom: -10px;
+opacity: 0;
+transition: all 0.3s;
+pointer-events: none;
+}
+.a:hover{
+    color: #ffffff;
+}
+
+.a:hover::after{
+   opacity: 1;
+}
