@@ -36,7 +36,7 @@
         font-weight: bold;
 }
 
-a{
+.a{
     position: relative;
     text-decoration: none;
     color: #a0a0a0;
@@ -45,7 +45,7 @@ a{
     padding: 0px 10px;
 }
 
-a:after{
+.a:after{
     content: "";
     position: absolute;
     background-color: #9342D1;
@@ -56,11 +56,11 @@ a:after{
     transition: 0.3s;
 }
 
-a:hover{
+.a:hover{
     color: #ffffff;
 }
 
-a:hover:after{
+.a:hover:after{
     width:100%
 
 }
