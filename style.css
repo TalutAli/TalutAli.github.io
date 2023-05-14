@@ -30,6 +30,7 @@ body {
 }
 
 #nav{
+    background-color: #320F4D;
     height: 90px;
     width: 1680px;
     min-width: 1000px;
@@ -82,33 +83,34 @@ h2{
     padding: 10px;
 }
 
-#nav.a{
-    background-color: #320F4D;
-    position: relative;
-    text-decoration: none;
-    color: #a0a0a0;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    padding: 0px 10px;
-    transition: all 0.3s;
+
+
+.a{
+position: relative;
+text-decoration: none;
+color: #a0a0a0;
+font-size: 20px;
+letter-spacing: 0.5px;
+padding: 0px 10px;
+transition: all 0.3s;
 }
 
-#nav.a::after{
-    content: '';
-    display: block;
-    background: #9342D1;
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-    opacity: 0;
-    transition: all 0.3s;
-    pointer-events: none;
+.a::after{
+content: '';
+display: block;
+background: #9342D1;
+height: 3px;
+width: 100%;
+left: 0;
+bottom: -10px;
+opacity: 0;
+transition: all 0.3s;
+pointer-events: none;
 }
-#nav.a:hover{
+.a:hover{
     color: #ffffff;
 }
 
-#nav.a:hover::after{
+.a:hover::after{
    opacity: 1;
 }
