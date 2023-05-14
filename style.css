@@ -33,7 +33,7 @@ body {
     background-color: #320F4D;
     height: 90px;
     width: 70vw;
-    min-width: 600px;
+    min-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: space-around;
