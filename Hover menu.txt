@@ -1,0 +1,22 @@
+.dropdown__menu{
+
+    display: none;
+}
+.submenu:hover + .dropdown__menu {
+    display: block;
+    position: absolute;
+    width: 150px;
+    right: 600px;
+    top: 180px;
+    background-color: #320F4D;
+}
+
+.submenu:hover + .dropdown__menu ul{
+    margin: 10px;
+    width: 150px;
+}
+
+.submenu:hover + .dropdown__menu ul li {
+    width: 150px;
+    padding: 10px;
+}
