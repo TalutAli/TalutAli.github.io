@@ -29,6 +29,10 @@ body {
     justify-content: center;
 }
 
+#subheading{
+    padding-top: 50px;
+}
+
 #nav{
     background-color: #320F4D;
     height: 90px;
@@ -39,6 +43,23 @@ body {
     justify-content: space-around;
     margin: auto;
     }
+
+#subnav{
+    background-color: #4c1675;
+    height: 50px;
+    width: 1680px;
+    min-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 1opx;
+}
+#description{
+    padding: 20px;
+    color: #e9dcc9;
+    font-size: 20px;
+}
 
 a{
     position: relative;
@@ -101,6 +122,10 @@ h2{
 #img1{
     padding: 20px;
     float: left;
+}
+
+#img2{
+    padding: 20px;
 }
 #myBio{ 
     padding-left: 20px;
