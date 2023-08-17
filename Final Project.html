@@ -1,0 +1,277 @@
+!DOCTYPE html>
+
+<html lang="en"> 
+<head>
+    <title>The Site</title>
+    <link rel="stylesheet"type=" text/css" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="images/Ali Logo.png" height="90" alt="My logo"/>
+
+        </div>
+        <div id="nav">
+            <a href="index.html"><img src="images/Home Icon.png" height="60" alt="home button"></a>
+            <a class="selected" href="about.html">About</a>
+            <a href="assignments.html">Assignments </a>
+            <a href="Final Project.html">Final Project </a>
+
+        </div>
+        
+        <div id="content">
+            <div>
+                <h2>Final Project</h2>
+            </div>
+
+            <div id="description">
+                <p>This page is where I document my design process for the final project of my elective. </p>
+            </div>
+
+            <div id="subheading">
+                <h3>1.Initial Concept</h3>
+            </div>
+            <div id="img2">
+                <img src="images/Bin.jpg" height="500" alt="Picture of a smart rubbish bin">
+                <img src="images/Sealer.jpg" height="500" alt="Picture of a plastic bag sealer">
+            </div>
+            
+            <div id="description">
+                <p>The idea I came up with was to combine an automatic rubbish bin with a plastic bag sealer. </p> 
+                <p>I thought it could be somewhat useful if I could managed to make it work.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/ConceptDrawing.jpg" height="500" alt="Picture of a concept sketch">
+            </div>
+
+            <div id="description">
+                <p>The basic way I envisioned it was a rubbish bin that has a plastic sealer that can be mounted onto it, with an ultrasonic sensor to tirgger</p>
+                <p>the lid opening mechanism. In initial concept sketches, I planned to to create a half-cylindrical body out of laser cut plywood, using a living. </p> 
+                <p>hinge. But after some consideration i figured that such a design would make the walls very fragile, and would require some internal supporting</p>
+                <p>structures to hold its shape. I also had to reconsider the original linkage mechanism for the lid as it was unneccessarily complicated</p>
+            </div>
+
+            <div id="description">
+                <p>In the end, I decided to go with a cuboid shape, with only the front corners featuring living hinges for a more aesthetically pleasing shape.</p>
+                <p>For the lid mechanism, I just kept it simple and decided to try using a servo motor to open the lid directly.</p>
+            </div>
+
+            <div id="subheading">
+                <h3>2. 3D-Modelling</h3>
+            </div>
+
+            <div id="description">
+                <p>After the design considerations, I began 3D modelling the main body in Fusion 360. First I created the front wall with the living hinge, as well as</p>
+                <p>cutouts for the plastic sealer and wiring. Then I created the backwall and some internal platforms for the servo motor and ciruit cover.</p>
+            </div>
+
+            <div id="img2">
+                <iframe src="https://ichat4099.autodesk360.com/shares/public/SH512d4QTec90decfa6e19499026aad723c9?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            </div>
+
+            <div id="description">
+                <p>I then created the external features such as the hinge for the lid and the cover for the ultrasonic sensor.</p>
+            </div>
+
+            <div id="img2">
+                <iframe src="https://ichat4099.autodesk360.com/shares/public/SH512d4QTec90decfa6e8ebb08a6502797f6?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                <iframe src="https://ichat4099.autodesk360.com/shares/public/SH512d4QTec90decfa6e3e1df88a59faff11?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            </div>
+
+            <div id="description">
+                <p>For the plastic sealer, I had to refer to online recources to see how I could replicate the mechanism.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/Mechanism2.jpg" height="500" alt="Picture of a tape sealer mechanism">
+                <img src="images/Mechanism3.png" height="500" alt="Picture of Tape sealer 2D drawing">
+                <img src="images/Mechanism.jpg" height="500" alt="Picture of a tape sealer mechanism">
+            </div>
+
+            <div id="description">
+                <p>I then recreated the mechanism in Fusion but scaled everything down so that it could fit into a smaller housing and work with a smaller roll of tape.</p>
+            </div>
+
+            <div id="img2">
+                <iframe src="https://ichat4099.autodesk360.com/shares/public/SH512d4QTec90decfa6ed695356b81117462?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            </div>
+
+            <div id="description">
+                <p>Here's the model of everything put together.</p>
+            </div>
+
+            <div id="img2">
+                <iframe src="https://ichat4099.autodesk360.com/shares/public/SH512d4QTec90decfa6e19499026aad723c9?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            </div>
+
+            <div id="subheading">
+                <h3>3. Programming</h3>
+            </div>
+
+            <div id="description">
+                <p>I wired up, and programmed the circuit in TinkerCAD. The circuit consists of an ultrasonic sensor and a servo motor wired to a breadboard,</p>
+                <p>with an Arduino UNO as a microcontroller.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/TinkerCAD Final.png" height="500" alt="Picture of a circuit in TinkerCAD">
+            </div>
+
+            <div id="description">
+                <p>Here is the code used. It basically programmes the servo to rotate 90 degrees whenever an object is detected by the sensor within 30cm.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalCode1.png" height="500" alt="Picture of a code in TinkerCAD">
+            </div>
+
+            <div id="subheading">
+                <h3>4. Laser cutting</h3>
+            </div>
+
+            <div id="description">
+                <p>I arranged my parts into a flat pattern and exported the vector 2D profile to laser cut.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalLaser1.png" height="500" alt="Picture of laser cutter toolpath in fusion 360">
+            </div>
+
+            <div id="description">
+                <p>All of the main body as well as the sealer cover was made using laser cut 3mm plywood</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalLaser2.jpg" height="500" alt="Picture of laser cut plywood">
+            </div>
+
+            <div id="subheading">
+                <h3>5. 3D Printing</h3>
+            </div>
+
+            <div id="description">
+                <p>I used the Ultimaker Cura slicer to prepare my 3D printed parts. I tried to configure the print settings to have a faster print time whenever possible</p>
+                <p>as I had many parts to print.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/Final3Dprinting1.png" height="500" alt="Picture of STP in Cura Slicer">
+                <img src="images/Final3Dprinting2.png" height="500" alt="Picture of STP in Cura Slicer">
+                <img src="images/Final3Dprinting3.png" height="500" alt="Picture of STP in Cura Slicer">
+                <img src="images/Final3Dprinting5.png" height="500" alt="Picture of STP in Cura Slicer">
+            </div>
+
+            <div id="description">
+                <p>After printing out the parts for the sealer, I assembled them together and put in the springs and blade to make the mechanism work.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/Final3Dprinting4.jpg" height="500" alt="Picture of 3D printed mecahanism">
+            </div>
+            
+            <div id="description">
+                <p>Here are some of my other 3D printed parts.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/Final3Dprinting6.jpg" height="500" alt="Picture of 3D printed part">
+                <img src="images/Final3Dprinting7.jpg" height="500" alt="Picture of 3D printed part">
+            </div>
+
+            <div id="subheading">
+                <h3>6. Assembly</h3>
+            </div>
+
+            <div id="description">
+                <p>Once the parts have all been fabricated, I started building the project. The main body was mainly put together by finger joints, with some glue to reinforce</p>
+                <p>parts that don't fit well due wood warping. I also used nuts and bolts to fasten the hinge to the lid and back wall. For the rest of the loose componets,</p>
+                <p>I used hot glue to fix them to the body.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalAssy1.jpg" height="500" alt="Picture of assembled project">
+                <img src="images/FinalAssy2.jpg" height="500" alt="Picture of assembled project">
+                <img src="images/FinalAssy3.jpg" height="500" alt="Picture of assembled project">
+                <img src="images/FinalAssy4.jpg" height="500" alt="Picture of assembled project">
+                <img src="images/FinalAssy5.jpg" height="500" alt="Picture of assembled project">
+                <img src="images/FinalAssy2.jpg" height="500" alt="Picture of assembled project">
+            </div>
+
+            <div id="subheading">
+                <h3>7. Challenges</h3>
+            </div>
+
+            <div id="description">
+                <p>There were multiple problems that came up during the design process that needed to be solved either through redesigning or modifying some parts</p>
+                <p>using crude DIY methods.</p>
+            </div>
+
+            <div id="description">
+                <p>1. The initial design for the hinge was too thin, leading to the shaft of the hinge to be fragile and break during assembly. To fix this, I</p>
+                <p>redesigned the hinge so that its thicker at the section with the mechanism to make it stronger.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalChallenges1.jpg" height="500" alt="Picture of 3D printed part">
+                <iframe src="https://ichat4099.autodesk360.com/shares/public/SH512d4QTec90decfa6eab8d17d834704e56?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+            </div>
+
+            <div id="description">
+                <p>2. The slits in the living hinge were too long, causing it to fray at the edges and lack structure.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalChallenges2.jpg" height="500" alt="Picture of laser cut living hinge">
+            </div>
+
+            <div id="description">
+                <p>To fix this i redesigned the living hinge to have double the number of slits along</p>
+                <p>the height of the wall, and made each slit shorter.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalChallenges2S.jpg" height="500" alt="Picture of laser cut living hinge">
+            </div>
+
+            <div id="description">
+                <p>3. The ultrasonic sensor was giving a lot of false positives and would trigger the servo motor even when there no object</p>
+                <p>in range. To fix this, i changed the code so that intead of using the sensor's readings to activate the motor directly,</p>
+                <p>the readings are averaged out and compared against a threshold value. The motor is only activated when the average</p>
+                <p>readings is falls below the threshold, which allow the circuit to be more consistent with less false positives.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalChallenges3.png" height="500" alt="Picture of code in TinkerCAD">
+            </div>
+
+            <div id="description">
+                <p>4. Another issue was that the sound of the lid closing was very loud and disturbing. To fix this, I hot glued some styrofoam</p>
+                <p>padding around the rim of the bin to cushion the lid when it closes and reduce the noise.</p>
+            </div>
+
+            <div id="img2">
+                <img src="images/FinalChallenges4.jpg" height="500" alt="Picture of project">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            
+
+            
+
+        </div>
+        <div id="footer">
+            Copyright &copy; 2023 Talut Ali.
+        </div>
+    </div>
+</body>
+</html>
